@@ -1,0 +1,26 @@
+
+<%- include("header") %>
+
+<div class="formDiv">
+    <ul>
+    <% for(var item=0; item<Items.length;item++) {%>
+
+        <li> Name : <%= Items[item].name %> <br> Password : <%= Items[item].password %> </li>
+        <a href="/update/<%= Items[item].name %>">UPDATE</a><br>
+        <a href="/delete/<%= Items[item].name %>">DELETE</a><br><br>
+    
+    <% }; %>
+
+</ul>
+
+
+<a href="/"><button class="btn">Home</button></a>
+
+</div>
+
+
+<%- include("footer") %>
+
+
+html -page static
+ejs html embedded in javascript
